@@ -7,7 +7,7 @@ from PIL import Image
 # Load model
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("best_mobilenet_model.h5")
+    return tf.keras.models.load_model("best_mobilenet_model.h5", compile=False)
 
 model = load_model()
 
