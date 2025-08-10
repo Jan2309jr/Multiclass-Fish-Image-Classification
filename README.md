@@ -130,7 +130,7 @@ streamlit run app.py
 
 * The best MobileNet model (`best_mobilenet_model.h5`) was deployed using **Streamlit**.
 * The app is hosted and accessible via: *Streamlit Cloud*
-* (click here to view the app)[https://multiclass-fish-image-classification-dal34enyafbhoz8xlzuypn.streamlit.app/]
+* [Click here to view the app](https://multiclass-fish-image-classification-dal34enyafbhoz8xlzuypn.streamlit.app/)
 
 ---
 
