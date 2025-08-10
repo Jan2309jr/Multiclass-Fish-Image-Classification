@@ -16,9 +16,20 @@ The workflow involves:
 ## 📂 Dataset
 
 * **Type:** Image dataset containing multiple fish species.
-* **Classes:** Multiple fish categories (exact list depends on dataset used).
-* **Image Size:** Resized to a fixed dimension (e.g., 224x224) before training.
-* **Source:** *(Mention source here if public, e.g., Kaggle, Custom dataset)*
+* **Classes:**
+1. fish sea_food shrimp
+2. fish sea_food striped_red_mullet
+3. fish sea_food sea_bass
+4. animal fish bass
+5. fish sea_food black_sea_sprat
+6. fish sea_food red_mullet
+7. fish sea_food gilt_head_bream
+8. fish sea_food red_sea_bream 
+9. animal fish : 1096
+10. fish sea_food trout
+11. fish sea_food hourse_mackerel
+* **Image Size:** Resized to a fixed dimension (224x224) before training.
+* **Source:** *Labmentix*
 
 ---
 
@@ -36,15 +47,7 @@ The workflow involves:
 ---
 
 ## 📊 Model Performance
-
-| Model          | Training Accuracy | Validation Accuracy | Test Accuracy |
-| -------------- | ----------------- | ------------------- | ------------- |
-| Custom CNN     | \~XX%             | \~XX%               | \~XX%         |
-| ResNet50       | \~XX%             | \~XX%               | \~XX%         |
-| VGG16          | \~XX%             | \~XX%               | \~XX%         |
-| MobileNet      | \~99%             | \~99%               | \~99%         |
-| EfficientNetB0 | \~XX%             | \~XX%               | \~XX%         |
-| InceptionV3    | \~XX%             | \~XX%               | \~XX%         |
+<img width="495" height="270" alt="image" src="https://github.com/user-attachments/assets/61d69c68-6d3d-4f4b-bc98-5690afd0092e" />
 
 > **Note:** MobileNet was selected for deployment due to its lightweight architecture, high accuracy, and fast inference speed.
 
@@ -102,6 +105,9 @@ streamlit run app.py
 ✅ Model predicts fish species with **confidence scores**.
 ✅ Confidence scores are shown as a **bar graph**.
 ✅ Mobile-friendly interface.
+<img width="367" height="526" alt="image" src="https://github.com/user-attachments/assets/8a8c44d6-8809-48ad-8447-91c687ae3455" />
+<img width="381" height="528" alt="image" src="https://github.com/user-attachments/assets/0772a981-545a-4022-9c29-3c0919f8752c" />
+
 
 ---
 
@@ -109,14 +115,13 @@ streamlit run app.py
 
 ```
 📦 fish-classification
-│── app.py                  # Streamlit app script
-│── train.py                # Model training script
-│── best_mobilenet_model.h5 # Saved best model
-│── requirements.txt        # Python dependencies
-│── README.md               # Project documentation
-│── data/                   # Dataset folder
-│── models/                 # Saved model weights
-│── utils.py                # Helper functions
+│── app.py                                                    # Streamlit app script
+│── Multiclass-Fish-Image-classification.ipynb                # Model training script
+│── best_mobilenet_model.h5                                   # Saved best model as .h5 file
+│── requirements.txt                                          # Python dependencies
+│── runtime.txt                                               # Runtime environment
+│── README.md                                                 # Project documentation
+│── data/                                                     # Dataset folder
 ```
 
 ---
@@ -124,7 +129,8 @@ streamlit run app.py
 ## 🚀 Deployment
 
 * The best MobileNet model (`best_mobilenet_model.h5`) was deployed using **Streamlit**.
-* The app is hosted and accessible via: *(Add Hugging Face / Streamlit Cloud / other link here)*
+* The app is hosted and accessible via: *Streamlit Cloud*
+* (click here to view the app)[https://multiclass-fish-image-classification-dal34enyafbhoz8xlzuypn.streamlit.app/]
 
 ---
 
@@ -134,20 +140,5 @@ streamlit run app.py
 * Improve generalization with data augmentation.
 * Deploy a **multi-model comparison** app.
 * Optimize for mobile devices.
-
----
-
-## 🏆 Results Summary
-
-* **Best Model:** MobileNet
-* **Accuracy:** \~99% on test set
-* **Inference Speed:** <1 sec per image on CPU
-* **Deployment:** Streamlit web app
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. Feel free to use and modify for research or educational purposes.
 
 ---
